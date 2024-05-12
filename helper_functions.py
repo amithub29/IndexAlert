@@ -31,5 +31,3 @@ def send_message(data):
     client.messages.create(body=body, from_=os.getenv("from_number"), to=os.getenv("to_number"))
 
 
-values = get_indices_value()
-send_message(values)
